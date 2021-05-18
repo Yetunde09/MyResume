@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		*{padding: 0;
+			margin: 0;
+			box-sizing: border-box;}
+		html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background:purple; 
+}
+.container{
+	width: 100;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;}
+	#ben .ben{
+		flex-direction: column;
+		text-align: center;
+		max-width: 1500px;
+		margin: 50px auto;
+	}
+	#ben .header{
+		flex-direction: column;
+		align-items: left; 
+
+	}
+
+	#ben .image{
+		width:350px;
+		height: 350px;
+		border-radius: 50%;
+		margin-bottom: 10px;
+		margin-top: 50px;
+		text-align: left;
+		transform: scale(0.9);
+		
+	}
+	#ben .image::after{
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		position: absolute;
+		border: 2px dotted black;
+		left: 0;
+		top:0;
+		animation: image_box .7s ease infinite;
+	}
+	
+	#ben img{
+		border-radius: 50%;
+		position: relative;
+		z-index: 100;
+		transform: scale(0.8);
+		transition: 0.3 ease;
+	}
+	#ben img:hover{
+		transform: scale(1.3);
+	}
+
+		#ben .logo{
+		text-align: left;
+		margin-top: 30px;
+	}
+	#ben .ex{
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+	}
+	#ben .sp{
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+	#ben .nav{
+		margin-top: 50px;
+		max-width: 1200px;
+	}
+	#ben .nav .info{
+		margin-bottom: 30px;
+		text-align: left;
+		
+		border-radius: 10px;
+		box-shadow:0px 0px 10px 0px black;
+		 transition: .3s ease all;
+	}
+
+	#ben .nav .info:hover{
+		box-shadow: 0px 0px 5px 0px black;
+		 transform: scale(1.3);
+	}
+	 h2{
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+ p{
+		text-transform: uppercase;
+		font-size: 15px;
+		font-style: italic;
+	}
+	ul li{
+		list-style-type: none;
+	}
+	@keyframes image_box{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+	@media  only screen and (min-width:760px){
+		#ben .ben{
+			flex-direction: row;
+		}
+		#ben .nav{
+			max-width: 50%;
+			margin-left: 100px;
+		}
+
+	}
+
+	</style>
+	<title>Curriculumvitae</title>
+</head>
+<body>
+	<section id="ben" >
+ 		<div class=" ben container">
+		<div class="header">
+			<div class="image">
+				<img src="/lmg/pix.jpg" width="350px" height="350px">
+				<h2>Rasheed aminat yetunde</h2>
+				
+			</div>
+			<div class="logo">
+				<div class="sp" ><img src="/lmg/whatapp.jpg" class="ex">+234 81 4428 1521</div>
+				<div class="sp"><img src="/lmg/email.jpg"  class="ex">aminarasheed09@gmail.com</div>
+				<div class="sp" ><img src="/lmg/location.jpg" class="ex">No6 Alhaji Yisa, Iju Ishaga</div>
+				
+			</div>
+		</div>
+		<div class="nav">
+			<div class="info">
+				<h2>career objective</h2>
+				 I am an ambitious hard-worker who has developed the ability to work quickly and effectively. I have a proactive attitude and a strong work ethic, as well as a responsible approach to any task that I undertake, or situation that I am presented with. I possess many transferrable skills that can be used to make a real contribution in the day-to-day operations of any business. I am now looking for a suitable organization that can offer me a uniquely varied and fascinating work environment to become a successful professional in the field of web development by utilizing my skills. I create responsive websites.
+			</div>
+			<div class="info">
+				<h2>personal skills</h2>
+						<ul><li> Teamwork and cooperation</li>
+	<li>Organization</li>
+	<li>Communication</li>
+	<li>Time management</li>
+	<li>Training and teaching</li></ul>
+
+			</div>
+			<div class="info">
+				<h2>acquired skills</h2>
+				<ul>	<li>Programming languages; Java</li>
+	<li>Web development tools; HTML,CSS & JavaScript</li>
+	<li>ICT project management</li>
+	<li>Mathematics and Statistics</li>
+	<li>Problem-solving</li></ul>
+
+			</div>
+			<div class="info">
+				<h2>hobbies and interest</h2>
+			Making new friends, calculating, reading, skipping, listening to music and dancing.			</div>
+			<div class="info">
+				<h2>key competencies</h2>
+					<ul><li>Bringing good ideas to life</li>
+	<li>Fluent written and verbal communications skill</li>
+	<li>Ability to work quickly and effectively without supervision</li>
+	<li>Keen observation to what is going on in an organization</li></ul>
+			</div>
+			<div class="info">
+				<h2>reference</h2>
+				Available on request			</div>
+			<p>ps: it's responsive for both mobile and desktop</p>
+		</div>
+		
+		</div>
+	</section>
+
+
+</body>
+</html>
